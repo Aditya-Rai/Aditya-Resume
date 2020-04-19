@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Rai</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- Google Font Ubuntu -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Google font Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+
+    <!-- Font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#profile">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="profile">
+        <img class="mypic" src="images/profilepic.jpg" alt="">
+        <div class="profilecontent">
+            <h1 class="myName">Hi, I'm Aditya </h1>
+            <p>A programmer.</p>
+            <img class="computerimg" src="images/computer.png" alt="">
+        </div>
+    </div>
+    <section id="about">
+        <h1>Skills</h1>
+        <p class="content">
+        </p>
+        <section id="skills">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="c skill">
+                        <img class = "skill-img"src="images/c-.png" alt="">
+                        <p>Basics of C language</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="python skill">
+                        <i class="fab fa-python fa-5x"></i>
+                        <p>Basics of Python</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="web skill">
+                        <img class = "skill-img"src="images/code.png" alt="">
+                        <p>Learning Web Development</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </section>
+    </section>
+    <section id="education">
+        <h1>Qualification</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Qualification</th>
+                    <th>Institute</th>
+                    <th>Year of Passing</th>
+                    <th>Grades</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>SSC</td>
+                    <td>Deacons Foundation Higher Secondary School</td>
+                    <td>2016-17</td>
+                    <td>78%</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>HSC</td>
+                    <td>T. & T.V. Sarvajanik High School</td>
+                    <td>2018-19</td>
+                    <td>76%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form action="backend.php"></form>
+        <div>
+            <label for="name">Name </label>
+            <input type="text" id="name">
+        </div>
+        <div>
+
+            <label for="email">Email</label>
+            <input type="email" name="" id="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="" id="password">
+
+        </div>
+        <div>
+            <label for="mobile">Mobile No</label>
+            <input type="number" name="" id="mobile">
+
+        </div>
+        <div>
+            Gender : Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+        <input class="btn btn-outline-light buttons" type="submit" value="Submit">
+
+
+    </section>
+    <section id="footer">
+        <a href="https://twitter.com" target="__blank"><i class=" fa-2x fab fa-twitter footer-icons"></i></a>
+        <a href="https://facebook.com"><i class=" fa-2x fab fa-facebook-f footer-icons"></i></a>
+        <a href="https://instagram.com"><i class=" fa-2x fab fa-instagram footer-icons"></i></a>
+        <a href="mailto:adityarai7860@gmail.com"><i class=" fa-2x fas fa-envelope footer-icons"></i></a>
+        </footer>
+</body>
+
+</html>
